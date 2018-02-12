@@ -1,0 +1,31 @@
+# Js_web_learning
+//A test of learning web develop
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">    
+    <title>Clock</title> 
+    <style>        
+        #mytime{
+            border:2px solid red;
+            width:450px;
+            height:150px;
+            text-align:center;       
+        }
+    </style>
+</head>
+
+<body>
+<div id="mytime"></div>
+<script>  
+    function showtime(){
+        var today=new Date();    
+        hh=today.getHours ();
+        mm=today.getMinutes ();
+        ss=today.getSeconds();    
+     document.getElementById ("mytime").innerHTML ="Time is "+hh+":"+mm+":"+ss;
+ }
+ setInterval("showtime( ) ", 1000 );
+</script>
+</body>
+<html>
